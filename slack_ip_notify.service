@@ -1,0 +1,12 @@
+[Unit]
+Description=Notify Raspberry Pi IP to Slack at boot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/profile.d/slack.sh
+ExecStart=/usr/bin/env python3 /home/username/path/to/raspi-ip-to-slack/slack_ip_notify.py
+
+[Install]
+WantedBy=multi-user.target
