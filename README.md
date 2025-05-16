@@ -32,7 +32,7 @@ Automatically send your Raspberry Pi’s IP address to Slack on system startup.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/raspi-ip-to-slack.git
+   git clone https://github.com/Murasan201/raspi-ip-to-slack.git
    cd raspi-ip-to-slack
    ```
 2. Make the script executable:
